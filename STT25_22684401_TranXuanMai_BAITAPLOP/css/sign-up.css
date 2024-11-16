@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__top {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #47add5;
+  width: 100%;
+}
+
+.header__top-left {
+  padding-left: 0;
+  margin-top: 3px;
+}
+
+.header__top-left span {
+  font-size: 20px;
+  color: white;
+  margin-right: 100px;
+  margin-left: 50px;
+  font-style: italic;
+}
+
+.header__top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.header__top-list {
+  list-style: none;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.header__top-item {
+}
+
+.header__top-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin-left: 3.5rem;
+  transition: 0.2s;
+}
+
+.header__top-link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(to right, #a9e2f5, #c9d6ff);
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.register-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+.success-message {
+  color: #47add5;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #47add5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+footer {
+  width: 100%;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: white;
+}

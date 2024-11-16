@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sách được yêu thích</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fav.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header">
+      <!-- header top -->
+      <div class="header__top">
+        <div class="container">
+          <section class="row flex">
+            <div class="col-lg-5 col-md-0 col-sm-0 header__top-left">
+              <span>Mây Bookstore-Uy tín chất lượng</span>
+            </div>
+
+            <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+              <ul class="header__top-list">
+                <li class="header__top-item">
+                  <a href="../html/index.html" class="header__top-link">
+                    Hỏi đáp</a
+                  >
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Hướng dẫn</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="../html/sign-up.html" class="header__top-link"
+                    >Đăng ký</a
+                  >
+                </li>
+                <li class="header__top-item">
+                  <a href="../html/sign-in.html" class="header__top-link"
+                    >Đăng nhập</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </div>
+      <!--end header top -->
+
+      <!-- header bottom -->
+      <div class="header__bottom">
+        <div class="container">
+          <section class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+              <h1 class="header__heading">
+                <a href="#" class="header__logo-link">
+                  <img
+                    src="../img/Mây Bookstore.png"
+                    alt="Logo"
+                    class="header__logo-img"
+                    width="100px"
+                  />
+                </a>
+              </h1>
+            </div>
+
+            <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+              <select name="" id="" class="header__search-select">
+                <option value="0">All</option>
+                <option value="1">Sách tiếng việt</option>
+                <option value="2">Sách sách nước ngoài</option>
+                <option value="3">Manga-Comic</option>
+              </select>
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Tìm kiếm tại đây..."
+              />
+              <button class="header__search-btn">
+                <div class="header__search-icon-wrap">
+                  <i class="fas fa-search header__search-icon"></i>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-lg-2 col-md-0 col-sm-0 header__call">
+              <div class="header__call-icon-wrap">
+                <i class="fas fa-phone-alt header__call-icon"></i>
+              </div>
+              <div class="header__call-info">
+                <div class="header__call-text">Gọi điện tư vấn</div>
+                <div class="header__call-number">0901.222.222</div>
+              </div>
+            </div>
+
+            <a
+              href="../html/cart.html"
+              class="col-lg-1 col-md-1 col-sm-0 header__cart"
+            >
+              <div class="header__cart-icon-wrap">
+                <span class="header__notice">4</span>
+                <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+      <!--end header bottom -->
+
+      <!-- header nav -->
+      <div class="header__nav">
+        <div class="container">
+          <section class="row">
+            <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+              <i class="fas fa-bars header__nav-menu-icon"></i>
+              <div class="header__nav-menu-title">Danh mục sản phẩm</div>
+            </div>
+
+            <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="../html/index.html" class="header__nav-link"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="../html/category.html" class="header__nav-link"
+                    >Danh mục sản phẩm</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="../html/product.html" class="header__nav-link"
+                    >Sản phẩm</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="../html/post.html" class="header__nav-link"
+                    >Bài viết</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="../html/fav.html" class="header__nav-link"
+                    >Sách được yêu thích</a
+                  >
+                </li>
+                <li class="header__nav-item">
+                  <a href="../html/contact.html" class="header__nav-link"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <!--end header nav -->
+
+    <!-- posts -->
+    <section class="posts">
+      <div class="container">
+        <div class="row pc">
+          <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">
+                  <img
+                    src="../img/item/baby-boy.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Sách Tiếng Việt</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="../img/item/translation.png"
+                    alt=""
+                    class="menu__item-icon"
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="512"
+                    viewBox="0 0 512 512"
+                    width="512"
+                  />
+                  Sách nước ngoài</a
+                >
+              </li>
+
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img
+                    src="../img/item/comic.png"
+                    alt=""
+                    class="menu__item-icon"
+                    viewBox="0 0 512 512"
+                    width="1012"
+                    height="512"
+                  />
+                  Manga - Comic</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- score-top-->
+
+          <div class="breadcrumbs col-lg-12 col-md-12 col-sm-12">
+            Trang chủ &raquo <span class="breadcrumbs__active">Bài viết</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <article class="post__list col-lg-9 col-md-9 col-sm-12">
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="../img/fav/dac nhan tam.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Đắt Nhân Tâm - Dale Carnegie
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Dù đã ra đời cách đây gần một thế kỷ, nhưng sách “Đắc nhân
+                  tâm” (Tên tiếng Anh: How to Win Friends & Influence People)
+                  vẫn gây được tiếng vang lớn cho tới hiện tại. Theo The New
+                  York Times, suốt 10 năm liền, “Đắc nhân tâm” là cuốn sách bán
+                  chạy hàng đầu với khoảng 58 bản dịch trên toàn cầu......
+                </div>
+              </div>
+            </div>
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img
+                  src="../img/product/hoang tu be.jpg"
+                  class="post__item-img"
+                />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Hoàng Tử Bé - Saint-Exupéry
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Hoàng tử bé – Antoine de Saint – Exupéry Hoàng Tử Bé là một
+                  cuốn sách kỳ diệu và đáng yêu, bởi chỉ một câu chuyện kể, với
+                  mỗi lứa tuổi khác nhau, tác phẩm mang đến những bài học khác
+                  nhau. Dù mang dáng dấp của cuốn sách cho thiếu nhi nhưng khi
+                  đọc “Hoàng Tử Bé”, có người rút ra được bài học về nghệ thuật
+                  sống, có người ngẫm ra các triết lý kinh doanh, lại có người
+                  suy nghĩ về sự vô thường của vạn vật, về bản chất của con
+                  người, những mối sa ngã và các tính xấu. ...
+                </div>
+              </div>
+            </div>
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="../img/fav/tram nam.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Nếu Biết Trăm Năm Là Hữu Hạn - Phạm Lữ Ân
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Phạm Lữ Ân và “Nếu biết trăm năm là hữu hạn” đọng lại ấn tượng
+                  dịu dàng về một giọng văn đẹp mà quen, và cũng rất êm ái trữ
+                  tình. Cái thứ văn thủ thỉ ấy hợp với người trẻ vô cùng. Có một
+                  sự minh triết lạ lùng trong cuốn sách này vừa khít với nỗi
+                  hoang mang trẻ trung cố giấu vào bướng bỉnh, với những ước mơ
+                  bất định, những đêm buồn không lý do và giọt nước mắt rơi tõm
+                  vào thơ dại....
+                </div>
+              </div>
+            </div>
+
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="../img/fav/thep.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Thép Đã Tôi Thế Đấy - Nikolai Alekseyevich Ostrovsky
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Được viết trong thời kì cách mạng sục sôi nên tác phẩm đã
+                  nhanh chóng gây được tiếng vang lớn đối với thanh niên Nga và
+                  cả Việt Nam, là khúc tráng ca bất hủ hát về hoài bão, về lý
+                  tưởng tuổi trẻ, tạo sức ảnh hưởng to lớn đến hàng triệu trái
+                  tim tuổi trẻ và là nguồn sức mạnh to lớn cổ vũ thanh niên đi
+                  theo con người cách mạng giải phóng dân tộc. Cho đến nay, Thép
+                  Đã Tôi Thế Đấy vẫn luôn là một trong những bức chân dung thành
+                  công nhất khắc họa hình ảnh người chiến sĩ cộng sản...
+                </div>
+              </div>
+            </div>
+
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="../img/fav/mien man.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Xứ Sở Miên Man - JUN PHẠM
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  “Xứ sở miên man” là cuốn sách dành cho thiếu nhi với tất cả sự
+                  hồn nhiên trong câu từ, vun vén trí tưởng tượng diệu kỳ và làm
+                  thế giới nở đầy sắc hoa rực rỡ trong mắt mỗi em nhỏ. Hình bóng
+                  cô bé Mì Gói đắm mình nơi các bức vẽ xinh, tự mình sáng tạo ra
+                  một thế giới trong mơ nhiệm màu với các nhân vật đàn cá đầu
+                  mèo, tộc Huỳnh Điệp, nông trại của những phú bà rau củ, chú
+                  Cuội…
+                </div>
+              </div>
+            </div>
+
+            <div class="post__item">
+              <div class="post__item-img-wrap">
+                <img src="../img/fav/vap nga.jpg" class="post__item-img" />
+              </div>
+
+              <div class="post__item-content">
+                <div class="post__item-title">
+                  <a href="#" class="post__item-link">
+                    <h2 class="post__item-heading">
+                      Mỗi lần vấp ngã là một lần trưởng thành - Liêu Trí Phong
+                    </h2>
+                  </a>
+                </div>
+
+                <div class="posts__item-cate-wrap">
+                  <div class="posts__item-cate">
+                    <i class="fa fa-folder posts__item-cate-icon"></i>
+                    <div class="posts__item-cate-name">Tin tức</div>
+                  </div>
+                  <div class="posts__item-cate-ad">
+                    <i class="fa fa-user posts__item-cate-ad-icon"></i>
+                    <div class="posts__item-cate-ad-name">Sưu tầm</div>
+                  </div>
+                </div>
+                <div class="posts__item-description">
+                  Trong cuộc đời, mỗi chúng ta dù ít dù nhiều đều đã từng trải
+                  qua những thời khắc khó khăn, đau khổ. Đặc biệt đối với những
+                  bạn rời xa vòng tay che chở, bao bọc của cha mẹ và nhà trường,
+                  bước chân vào xã hội, bạn sẽ gặp phải rất nhiều trở ngại và
+                  nhận ra xã hội ngày vốn không hề đơn giản như bạn tưởng
+                  tượng...
+                </div>
+              </div>
+            </div>
+
+            <nav class="post__pagination">
+              <ul class="post__pagination-list">
+                <li class="post__pagination-item">
+                  <a
+                    class="post__pagination-link"
+                    href="#"
+                    aria-label="Previous"
+                  >
+                    <span class="post__pagination-link-prev">&laquo;</span>
+                  </a>
+                </li>
+                <li class="post__pagination-item post__pagination-item--active">
+                  <a class="post__pagination-link" href="#">1</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">2</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">3</a>
+                </li>
+                <li class="post__pagination-item post__pagination-item--center">
+                  ...
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">9</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">10</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#">11</a>
+                </li>
+                <li class="post__pagination-item">
+                  <a class="post__pagination-link" href="#" aria-label="Next">
+                    <span class="post__pagination-link-next">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+
+          <aside class="post__aside col-lg-3 col-md-3 col-sm-0">
+            <div class="post__aside-top">
+              <div class="post__aside-title">
+                <h3 class="post__aside-heading">Bài viết liên quan</h3>
+
+                <div class="post__aside-list">
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img
+                        src="../img/post/doisach.jpg"
+                        class="post__aside-img"
+                      />
+                    </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          Chương trình đổi sách cũ lấy cây xanh
+                        </h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img
+                        src="../img/post/dantoc.jpg"
+                        class="post__aside-img"
+                      />
+                    </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          Góp sách cũ ,tặng niềm vui mới cho trẻ em nghèo
+                        </h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="post__aside-item post__aside-item--no-border">
+                    <div class="post__aside-img-wrap">
+                      <img
+                        src="../img/post/phanbiet.jpg"
+                        class="post__aside-img"
+                      />
+                    </div>
+                    <div class="post__aside-title">
+                      <a href="#" class="post__aside-link">
+                        <h4 class="post__aside-link-heading">
+                          Cách phân biệt sách thật giả chính xác
+                        </h4>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post__aside-bottom">
+              <h3 class="post__aside-heading">Có thể bạn sẽ thích</h3>
+
+              <div class="post__aside-list">
+                <div class="post__aside-item post__aside-item--border">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/tuoi-tre-dang-gia-bao-nhieu (1).jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        Tuổi Trẻ Đáng Giá Bao Nhiêu
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 80.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/yourname.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">Your Name</h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 76.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/nha-gia-kim.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">Nhà Giả Kim</h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 79.00đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/thuongduong.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">Thượng Dương</h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 108.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/domdom.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">Mộ Đom Đóm</h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 76.500đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/caycam.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        Cây Cam Ngọt Của Tôi
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 108.000đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/chuyenconmeo.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">
+                        Chuyện Con Mèo Dạy Hải Âu Bay
+                      </h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 34.300đ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post__aside-item">
+                  <div class="post__aside-img-wrap">
+                    <img
+                      src="../img/product/hoang tu be.jpg"
+                      class="post__aside-img"
+                    />
+                  </div>
+                  <div class="post__aside-title">
+                    <a href="#" class="post__aside-link">
+                      <h4 class="post__aside-link-heading">Hoàng Tử Bé</h4>
+                    </a>
+
+                    <div class="post__aside-rate-wrap">
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                      <i class="fas fa-star post__aside-rate"></i>
+                    </div>
+
+                    <div class="post__aside-price">
+                      <span class="post__aside-price-current"> 89.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!--end posts -->
+
+    <!-- footer -->
+    <footer>
+      <section class="footer__top">
+        <div class="container">
+          <div class="row">
+            <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+              <h4 class="footer__top-intro-heading">Về chúng tôi</h4>
+              <div class="footer__top-intro-content">
+                Mây Bookstore là cửa hàng luôn cung cấp cho các bạn tìm tòi tri
+                thức, đam mê đọc sách trên khắp cả nước.Chúng tôi sẽ liên tục
+                cập nhật những cuốn sách hay nhất, mới nhất, chất lượng nhất
+                giúp người đọc có những cuốn sách hay nhất để đọc! <br />
+                <br />
+                Điện thoại: 0901.222.222 <br />
+                Email: xuanmai24@gmail.com <br />
+                Zalo: 0901.222.222 <br />
+              </div>
+            </article>
+
+            <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+              <h4 class="footer__top-policy-heading">Chính sách mua hàng</h4>
+
+              <ul class="footer__top-policy-list">
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Hình thức đặt hàng</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Hình thức thanh toán</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Phương thức vận chuyển</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Chính sách đổi trả</a
+                  >
+                </li>
+                <li class="footer__top-policy-item">
+                  <a href="#" class="footer__top-policy-link"
+                    >Hướng dẫn sử dụng</a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6"
+            >
+              <h4 class="footer__top-contact-heading">Hotline liên hệ</h4>
+
+              <div class="footer__top-contact">
+                <div class="footer__top-contact-icon">
+                  <img
+                    src="../img/logo/phone_top.png"
+                    class="footer__top-contact-img"
+                  />
+                </div>
+
+                <div class="footer__top-contact-phone-wrap">
+                  <div class="footer__top-contact-phone">0901.222.222</div>
+                  <div class="footer__top-contact-des">
+                    (Giải đáp thắc mắc 24/24)
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="footer__top-contact-heading">Kết nối với chúng tôi</h4>
+
+              <div class="footer__top-contact-social">
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="../img/logo/facebook.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="../img/logo/zalo.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="../img/logo/tiktok.png" />
+                </a>
+                <a href="#" class="footer__top-contact-social-link">
+                  <img src="../img/logo/youtube.png" />
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <span class="footer__bottom-content"
+              >@Bản quyền thuộc về Mây Bookstore | Thiết kế bởi Tran Xuan Mai
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- end footer -->
+    <script src="../js/jq.js"></script>
+  </body>
+</html>

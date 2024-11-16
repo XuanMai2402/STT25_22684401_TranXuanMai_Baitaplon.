@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="header__top">
+        <div class="container">
+            <section class="row flex">
+                <div class="col-lg-5 col-md-0 col-sm-0 header__top-left">
+                    <span>Mây Bookstore-Uy tín chất lượng</span>
+                </div>
+                <nav class="col-lg-7 col-md-0 col-sm-0 header__top-right">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">Hỏi đáp</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-link">Hướng dẫn</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="../html/sign-up.html" class="header__top-link">Đăng ký</a
+                >
+              </li>
+              <li class="header__top-item">
+                <a href="../html/sign-in.html" class="header__top-link"
+                  >Đăng nhập</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+    <div class="register-form">
+      <h2>Đăng Kí Tài Khoản</h2>
+      <div class="form-group">
+        <label for="fullname">Họ Và Tên:</label>
+        <input type="text" id="fullname" name="fullname" />
+        <span class="error-message" id="fullname-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="text" id="phone" name="phone" />
+        <span class="error-message" id="phone-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="gender">Giới Tính:</label>
+        <select id="gender" name="gender">
+          <option value="">Chọn Giới Tính</option>
+          <option value="Male">Nam</option>
+          <option value="Female">Nữ</option>
+          <option value="Other">Khác</option>
+        </select>
+        <span class="error-message" id="gender-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="dob">Ngày Sinh:</label>
+        <input type="date" id="dob" name="dob" />
+        <span class="error-message" id="dob-error"></span>
+      </div>
+      <button onclick="register()">Đăng Kí</button>
+      <div class="success-message" id="success-message"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">
+                @Bản quyền thuộc về Mây Bookstore | Thiết kế bởi Tran Xuan Mai
+            </p>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+      function register() {
+        // Clear previous error messages
+        $(".error-message").text("");
+        $("#success-message").text("");
+
+        // Get input values
+        const fullname = $("#fullname").val().trim();
+        const email = $("#email").val().trim();
+        const phone = $("#phone").val().trim();
+        const gender = $("#gender").val();
+        const dob = $("#dob").val();
+
+        let isValid = true;
+
+        // Full name validation
+        if (fullname === "") {
+          $("#fullname-error").text("Vui lòng nhập tên của bạn.");
+          isValid = false;
+        }
+
+        // Email validation
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (email === "") {
+          $("#email-error").text("Vui lòng nhập email của bạn.");
+          isValid = false;
+        } else if (!emailPattern.test(email)) {
+          $("#email-error").text("Nhập sai, vui lòng nhập lại.");
+          isValid = false;
+        }
+
+        // Phone number validation
+        const phonePattern = /^[0-9]{10,11}$/;
+        if (phone === "") {
+          $("#phone-error").text("Vui lòng nhập số điện thoại.");
+          isValid = false;
+        } else if (!phonePattern.test(phone)) {
+          $("#phone-error").text("Số điện thoại phải có 10-11 chữ sôs.");
+          isValid = false;
+        }
+
+        // Gender validation
+        if (gender === "") {
+          $("#gender-error").text("Vui lòng chọn giới tính.");
+          isValid = false;
+        }
+
+        // Date of birth validation
+        if (dob === "") {
+          $("#dob-error").text("Vui lòng nhập ngày sinh.");
+          isValid = false;
+        }
+
+        // Display success message if valid and redirect to homepage
+        if (isValid) {
+          $("#success-message").html(
+            "Bạn đã đăng kí thành công <br>Your information:<br>" +
+              "Họ và tên: " +
+              fullname +
+              "<br>" +
+              "Email: " +
+              email +
+              "<br>" +
+              "Số điện thoại: " +
+              phone +
+              "<br>" +
+              "Giới tính: " +
+              gender +
+              "<br>" +
+              "Ngày: " +
+              dob +
+              "<br>" +
+              "Redirecting to homepage..."
+          );
+
+          // Redirect to homepage after 3 seconds
+          setTimeout(function () {
+            window.location.href = "index.html"; // Change 'index.html' to your actual homepage URL
+          }, 3000);
+        }
+      }
+    </script>
+  </body>
+</html>
